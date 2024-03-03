@@ -40,15 +40,15 @@
 	"timeZone": "Asia/Ho_Chi_Minh",
 	"credentials": {
 		"gmailAccount": {
-			"email": "",
-			"clientId": "",
-			"clientSecret": "",
-			"refreshToken": "",
+			"email": "tsiaroanjara84@gmail.com",
+			"clientId": "992611730488-b0kv9iacnndmm8s985pbauu2q1tubihb.apps.googleusercontent.com",
+			"clientSecret": "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",
+			"refreshToken": "1//04KaFI6LY6eJoCgYIARAAGAQSNgF-L9IrsXJQRt6accOogi3xeucI1NK2yv92lsnTtnZvgTREYuJW9-9UTGLxpaH_eWd9ZUnXgg",
 			"apiKey": ""
 		},
 		"gRecaptcha": {
-			"siteKey": "",
-			"secretKey": ""
+			"siteKey": "6LekVocpAAAAAOhoPypBuu22pPjNmXFVTQure0qL",
+			"secretKey": "6LekVocpAAAAAL6jqHPd5tV1fjrSDvvWFnOck9OA"
 		}
 	},
 	"dashBoard": {
