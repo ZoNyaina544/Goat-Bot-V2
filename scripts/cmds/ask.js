@@ -9,32 +9,32 @@ const Prefixes = [
 // Fonction pour changer la police d'écriture
 function transformText(text) {
   const replacements = {
-    a: "𝑎",
-    b: "𝑏",
-    c: "𝑐",
-    d: "𝑑",
-    e: "𝑒",
-    f: "𝑓",
-    g: "𝑔",
-    h: "ℎ",
-    i: "𝑖",
-    j: "𝑗",
-    k: "𝑘",
-    l: "𝑙",
-    m: "𝑚",
-    n: "𝑛",
-    o: "𝑜",
-    p: "𝑝",
-    q: "𝑞", 
-    r: "𝑟",
-    s: "𝑠",
-    t: "𝑡",
-    u: "𝑢",
-    v: "𝑣",
-    w: "𝑤",
-    x: "𝑥",
-    y: "𝑦",
-    z: "𝑧",
+    a: "𝘢",
+    b: "𝘣",
+    c: "𝘤",
+    d: "𝘥",
+    e: "𝘦",
+    f: "𝘧",
+    g: "𝘨",
+    h: "𝘩",
+    i: "𝘪",
+    j: "𝘫",
+    k: "𝘬",
+    l: "𝘭",
+    m: "𝘮",
+    n: "𝘯",
+    o: "𝘰",
+    p: "𝘱",
+    q: "𝘲", 
+    r: "𝘳",
+    s: "𝘴",
+    t: "𝘵",
+    u: "𝘶",
+    v: "𝘷",
+    w: "𝘸",
+    x: "𝘹",
+    y: "𝘺",
+    z: "𝘻",
 
     // Ajoutez d'autres remplacements au besoin
   };
@@ -76,7 +76,7 @@ module.exports = {
       const answer = response.data.answer;
       const transformedAnswer = transformText(answer);
 
-      await message.reply(transformedAnswer + "\n✰━━━━━━━━━━━✰\n 𝑩𝒐𝒕 𝒕𝒆𝒔𝒕 𝑻𝒔𝒊𝒂𝒓𝒐\n✰━━━━━━━━━━━✰");
+      await message.reply(transformedAnswer + "\n✰━━━━━━━━━━━✰\n [𝘊𝘏𝘐𝘡𝘜 𝘏𝘈𝘠𝘈𝘚𝘌]\n✰━━━━━━━━━━━✰");
 
     } catch (error) {
       console.error("Error:", error.message);
