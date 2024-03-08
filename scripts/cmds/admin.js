@@ -30,21 +30,21 @@ module.exports = {
 	langs: {
 		vi: {
 			added: "✅ | Đã thêm quyền admin cho %1 người dùng:\n%2",
-			alreadyAdmin: "\n⚠️ | %1 người dùng đã có quyền admin từ trước rồi:\n%2",
-			missingIdAdd: "⚠️ | Vui lòng nhập ID hoặc tag người dùng muốn thêm quyền admin",
+			alreadyAdmin: "\n⚠ | %1 người dùng đã có quyền admin từ trước rồi:\n%2",
+			missingIdAdd: "⚠ | Vui lòng nhập ID hoặc tag người dùng muốn thêm quyền admin",
 			removed: "✅ | Đã xóa quyền admin của %1 người dùng:\n%2",
-			notAdmin: "⚠️ | %1 người dùng không có quyền admin:\n%2",
-			missingIdRemove: "⚠️ | Vui lòng nhập ID hoặc tag người dùng muốn xóa quyền admin",
+			notAdmin: "⚠ | %1 người dùng không có quyền admin:\n%2",
+			missingIdRemove: "⚠ | Vui lòng nhập ID hoặc tag người dùng muốn xóa quyền admin",
 			listAdmin: "👑 | Danh sách admin:\n%1"
 		},
 		en: {
-			added: "✅ | Added admin role for %1 users:\n%2",
-			alreadyAdmin: "\n⚠️ | %1 users already have admin role:\n%2",
-			missingIdAdd: "⚠️ | Please enter ID or tag user to add admin role",
-			removed: "✅ | Removed admin role of %1 users:\n%2",
-			notAdmin: "⚠️ | %1 users don't have admin role:\n%2",
-			missingIdRemove: "⚠️ | Please enter ID or tag user to remove admin role",
-			listAdmin: "👑 | List of admins:\n%1"
+			added: "『 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗔𝗗𝗠𝗜𝗡』\n♡  ∩_∩\n（„• ֊ •„)♡\n╭─∪∪───⟡\n  ✅ | 𝑨𝒅𝒅𝒆𝒅 𝒂𝒅𝒎𝒊𝒏 𝒓𝒐𝒍𝒆 𝒇𝒐𝒓 %1 𝒖𝒔𝒆𝒓𝒔:\n%2",
+			alreadyAdmin: "\n⚠ | %1 𝒖𝒔𝒆𝒓𝒔 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒉𝒂𝒗𝒆 𝒂𝒅𝒎𝒊𝒏 𝒓𝒐𝒍𝒆:\n%2",
+			missingIdAdd: "⚠ | Please enter ID or tag user to add admin role",
+			removed: "『 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗔𝗗𝗠𝗜𝗡』\n♡  ∩_∩\n（„• ֊ •„)♡\n╭─∪∪───⟡\n   ✅ | 𝑹𝒆𝒎𝒐𝒗𝒆𝒅 𝒂𝒅𝒎𝒊𝒏 𝒓𝒐𝒍𝒆 𝒐𝒇 %1 𝒖𝒔𝒆𝒓𝒔:\n%2",
+			notAdmin: "『 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗔𝗗𝗠𝗜𝗡』\n♡  ∩_∩\n（„• ֊ •„)♡\n╭─∪∪───⟡\n ⚠ | %1 𝒖𝒔𝒆𝒓𝒔 𝒅𝒐𝒏'𝒕 𝒉𝒂𝒗𝒆 𝒂𝒅𝒎𝒊𝒏 𝒓𝒐𝒍𝒆:\n%2",
+			missingIdRemove: "『 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗔𝗗𝗠𝗜𝗡』\n♡  ∩_∩\n（„• ֊ •„)♡\n╭─∪∪───⟡\n ⚠ | 𝑷𝒍𝒆𝒂𝒔𝒆 𝒆𝒏𝒕𝒆𝒓 𝑰𝑫 𝒐𝒓 𝒕𝒂𝒈 𝒖𝒔𝒆𝒓 𝒕𝒐 𝒓𝒆𝒎𝒐𝒗𝒆 admin 𝒓𝒐𝒍𝒆",
+			listAdmin: "『 𝗖𝗢𝗠𝗠𝗔𝗡𝗗 𝗔𝗗𝗠𝗜𝗡』\n♡  ∩_∩\n（„• ֊ •„)♡\n╭─∪∪───⟡\n  👑 | 𝑳𝒊𝒔𝒕 𝒐𝒇 𝒂𝒅𝒎𝒊𝒏𝒔:\n%1 \n ___________"
 		}
 	},
 
