@@ -1,4 +1,4 @@
-const axios = require('axios');
+ const axios = require('axios');
 
 const Prefixes = [
   'ai',
@@ -9,33 +9,58 @@ const Prefixes = [
 // Fonction pour changer la police d'écriture
 function transformText(text) {
   const replacements = {
-    a: "𝘢",
-    b: "𝘣",
-    c: "𝘤",
-    d: "𝘥",
-    e: "𝘦",
-    f: "𝘧",
-    g: "𝘨",
-    h: "𝘩",
-    i: "𝘪",
-    j: "𝘫",
-    k: "𝘬",
-    l: "𝘭",
-    m: "𝘮",
-    n: "𝘯",
-    o: "𝘰",
-    p: "𝘱",
-    q: "𝘲", 
-    r: "𝘳",
-    s: "𝘴",
-    t: "𝘵",
-    u: "𝘶",
-    v: "𝘷",
-    w: "𝘸",
-    x: "𝘹",
-    y: "𝘺",
-    z: "𝘻",
-
+    a: "𝗮",
+    b: "𝗯",
+    c: "𝗰",
+    d: "𝗱",
+    e: "𝗲",
+    f: "𝗳",
+    g: "𝗴",
+    h: "𝗵",
+    i: "𝗶",
+    j: "𝗷",
+    k: "𝗸",
+    l: "𝗹",
+    m: "𝗺",
+    n: "𝗻",
+    o: "𝗼",
+    p: "𝗽",
+    q: "𝗾", 
+    r: "𝗿",
+    s: "𝘀",
+    t: "𝘁",
+    u: "𝘂",
+    v: "𝘃",
+    w: "𝘄",
+    x: "𝘅",
+    y: "𝘆",
+    z: "𝘇",
+    A: "𝗔̀", 
+    B: "𝗕", 
+    C: "𝗖", 
+    D: "𝗗", 
+    E: "𝗘", 
+    F: "𝗙", 
+    G: "𝗚", 
+    H: "𝗛", 
+     I: "𝗜", 
+    J: "𝗝", 
+    K: "𝗞", 
+    L: "𝗟", 
+   M: "𝗠"
+   N: "𝗡", 
+   O: "𝗢", 
+   P: "𝗣", 
+   Q: "𝗤", 
+   R: "𝗥", 
+   S: "𝗦", 
+   T: "𝗧", 
+   U: "𝗨", 
+   V: "𝗩", 
+  W: "𝗪",
+   X: "𝗫",
+   Y: "𝗬", 
+   Z: "𝗭", 
     // Ajoutez d'autres remplacements au besoin
   };
 
@@ -68,7 +93,7 @@ module.exports = {
 
       const prompt = event.body.substring(prefix.length).trim();
       if (!prompt) {
-        await message.reply("𝐼'𝑚 𝑜𝑘 𝑡𝑜 𝑎𝑛𝑠𝑤𝑒𝑟 𝑎𝑛𝑦 𝑞𝑢𝑒𝑠𝑡𝑖𝑜𝑛 ☚");
+        await message.reply("✰━━━━━━━━━━━✰\n [𝗖𝗛𝗜𝗭𝗨 𝗛𝗔𝗬𝗔𝗦𝗘]\n•➪ ${User Name} \n 𝙄'𝙢 𝙊𝙠 𝙩𝙤 𝙖𝙣𝙨𝙬𝙚𝙧 𝙖𝙡𝙡 𝙤𝙛 𝙮𝙤𝙪𝙧 𝙦𝙪𝙚𝙨𝙩𝙞𝙤𝙣 ⇦\n✰━━━━━━━━━━━✰");
         return;
       }
 
@@ -76,7 +101,8 @@ module.exports = {
       const answer = response.data.answer;
       const transformedAnswer = transformText(answer);
 
-      await message.reply(transformedAnswer + "\n✰━━━━━━━━━━━✰\n [𝘊𝘏𝘐𝘡𝘜 𝘏𝘈𝘠𝘈𝘚𝘌]\n✰━━━━━━━━━━━✰");
+      await message.reply(transformedAnswer + "\n✰━━━━━━━━━━━✰\n🧠[𝗖𝗛𝗜𝗭𝗨 
+𝗛𝗔𝗬𝗔𝗦𝗘]\n✰━━━━━━━━━━━✰");
 
     } catch (error) {
       console.error("Error:", error.message);
