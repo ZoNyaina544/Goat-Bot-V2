@@ -1,4 +1,4 @@
- const axios = require('axios');
+const axios = require('axios');
 
 const Prefixes = [
   'ai',
@@ -75,8 +75,7 @@ module.exports = {
       const answer = response.data.answer;
       const transformedAnswer = transformText(answer);
 
-      await message.reply(transformedAnswer + "✰━━━━━━━━━━━✰\n🧠[𝗖𝗛𝗜𝗭𝗨 
-𝗛𝗔𝗬𝗔𝗦𝗘]\n✰━━━━━━━━━━━✰");
+      await message.reply(transformedAnswer + "\n✰━━━━━━━━━━━✰\n 𝗖𝗛𝗜𝗭𝗨 𝗛𝗔𝗬𝗔𝗦𝗘\n✰━━━━━━━━━━━✰");
 
     } catch (error) {
       console.error("Error:", error.message);
