@@ -64,8 +64,10 @@ const names = categories[category].commands.sort();
       msg += ``; // its not decoy so change it if you want 
 
       const helpListImages = [
-        "https://i.postimg.cc/28X4xGpk/received-885638999839682450.jpg", // add image link here
-        "https://i.postimg.cc/ncL475PS/received-3554672038999084028.jpg",
+        "https://www.waifu.im/preview/2407.jpeg", // add image link here
+        "https://www.waifu.im/preview/2132.png",
+
+"https://www.waifu.im/preview/814.jpeg"
 
       ];
 
