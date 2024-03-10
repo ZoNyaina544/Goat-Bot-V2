@@ -64,10 +64,8 @@ const names = categories[category].commands.sort();
       msg += ``; // its not decoy so change it if you want 
 
       const helpListImages = [
-        "https://images.app.goo.gl/Z16hdNg4sBQz6zW18", // add image link here
-"https://images.app.goo.gl/3ke1A1FkdxFtaK586",
-
-"https://images.app.goo.gl/vGQsFqk6FMR1yTk87"
+        "https://i.postimg.cc/T27mBPD2/1709940456931.jpg", 
+        " https://i.postimg.cc/hv5Ss6hg/1709366315391.jpg"
 
       ];
 
