@@ -13,19 +13,19 @@ module.exports = {
 		category: "config",
 		guide: {
 			vi: "   {pn} <new prefix>: thay đổi prefix mới trong box chat của bạn"
-				+ "\n   Ví dụ:"
-				+ "\n    {pn} #"
-				+ "\n\n   {pn} <new prefix> -g: thay đổi prefix mới trong hệ thống bot (chỉ admin bot)"
-				+ "\n   Ví dụ:"
-				+ "\n    {pn} # -g"
-				+ "\n\n   {pn} reset: thay đổi prefix trong box chat của bạn về mặc định",
+				+ "\   Ví dụ:"
+				+ "\    {pn} #"
+				+ "\\   {pn} <new prefix> -g: thay đổi prefix mới trong hệ thống bot (chỉ admin bot)"
+				+ "\   Ví dụ:"
+				+ "\    {pn} # -g"
+				+ "\\   {pn} reset: thay đổi prefix trong box chat của bạn về mặc định",
 			en: "   {pn} <new prefix>: change new prefix in your box chat"
-				+ "\n   Example:"
-				+ "\n    {pn} #"
-				+ "\n\n   {pn} <new prefix> -g: change new prefix in system bot (only admin bot)"
-				+ "\n   Example:"
-				+ "\n    {pn} # -g"
-				+ "\n\n   {pn} reset: change prefix in your box chat to default"
+				+ "\   Example:"
+				+ "\    {pn} #"
+				+ "\\   {pn} <new prefix> -g: change new prefix in system bot (only admin bot)"
+				+ "\   Example:"
+				+ "\    {pn} # -g"
+				+ "\\   {pn} reset: change prefix in your box chat to default"
 		}
 	},
 
@@ -37,7 +37,7 @@ module.exports = {
 			confirmThisThread: "Vui lòng thả cảm xúc bất kỳ vào tin nhắn này để xác nhận thay đổi prefix trong nhóm chat của bạn",
 			successGlobal: "Đã thay đổi prefix hệ thống bot thành: %1",
 			successThisThread: "Đã thay đổi prefix trong nhóm chat của bạn thành: %1",
-			myPrefix: "🌐 Prefix của hệ thống: %1\n🛸 Prefix của nhóm bạn: %2"
+			myPrefix: "🌐 Prefix của hệ thống: %1\🛸 Prefix của nhóm bạn: %2"
 		},
 		en: {
 			reset: "Your prefix has been reset to default: %1",
@@ -59,12 +59,25 @@ module.exports = {
 			return message.reply(getLang("reset", global.GoatBot.config.prefix));
 		}
 
-		const newPrefix = args[0];
+   const newPrefix = args[0];
 		const formSet = {
 			commandName,
 			author: event.senderID,
 			newPrefix
 		};
+
+    const prefixListImages = [
+        "https://i.postimg.cc/qB39B2PH/inbound810613338503081447.jpg", // add image link here "https://i.postimg.cc/y8YQRRbd/inbound2479392190841042986.jpg",
+"https://i.postimg.cc/Z5GbnJww/inbound1526584159014735944.jpg"
+        // Add more image links as needed
+      ];
+
+      const prefixListImage = prefixListImages[Math.floor(Math.random() * helpListImages.length)];
+
+      await message.reply({
+        body: msg,
+        attachment: await global.utils.getStreamFromURL(prefixListImage),
+      });
 
 		if (args[1] === "-g")
 			if (role < 2)
