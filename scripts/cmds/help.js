@@ -104,7 +104,7 @@ module.exports = {
 
           for (let i = 0; i < names.length; i += 3) {
 
-            const cmds = names.slice(i, i + 3).map((item) => `✰${item}`);
+            const cmds = names.slice(i, i + 3).map((item) => `🌸${item}`);
 
             msg += `\n│ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
 
@@ -134,7 +134,10 @@ module.exports = {
 
         "https://i.postimg.cc/T27mBPD2/1709940456931.jpg", // add image link here
 
-        "https://i.postimg.cc/hv5Ss6hg/1709366315391.jpg"
+        "https://i.postimg.cc/hv5Ss6hg/1709366315391.jpg", 
+        " https://i.postimg.cc/y8YQRRbd/inbound2479392190841042986.jpg", 
+        "https://i.postimg.cc/qB39B2PH/inbound810613338503081447.jpg"
+        "https://i.postimg.cc/Z5GbnJww/inbound1526584159014735944.jpg"
 
         // Add more image links as needed
 
