@@ -1,8 +1,8 @@
-const axios = require('axios');
+liikconst axios = require('axios');
 
 const Prefixes = [
   'Ai',
-  'Tsiaro',
+  'Chizu',
   'goat',
 ];
 
