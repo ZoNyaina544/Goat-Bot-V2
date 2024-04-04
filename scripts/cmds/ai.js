@@ -28,7 +28,7 @@ module.exports = {
       const prompt = event.body.substring(prefix.length).trim();
 
       if (!prompt) {
-        const defaultMessage = getCenteredHeader("𝗖𝗛𝗜𝗭𝗨•𝗛𝗔𝗬𝗔𝗦𝗘") + "\n━━━━━━━━━━━━━━━━━━\nHello! Ask me anything!";
+        const defaultMessage = getCenteredHeader("[𝗛𝗜𝗭𝗨 𝗛𝗔𝗬𝗔𝗦𝗘]") + "\n━━━━━━━━━━━━━━━━━━\nHello! Ask me anything!";
         await message.reply(defaultMessage);
         return;
       }
@@ -36,7 +36,7 @@ module.exports = {
       const answer = await getGPTResponse(prompt);
 
       // Adding header to the answer
-      const answerWithHeader = getCenteredHeader("[-]𝗖𝗛𝗜𝗭𝗨 𝗔𝗜") + "\n━━━━━━━━━━━━━━━━━━\n" + answer;
+      const answerWithHeader = getCenteredHeader("[-]•𝗖𝗛𝗜𝗭𝗨 𝗔𝗜") + "\n━━━━━━━━━━━━━━━━━━\n" + answer;
       
       await message.reply(answerWithHeader);
     } catch (error) {
